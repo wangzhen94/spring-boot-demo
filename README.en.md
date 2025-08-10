@@ -72,7 +72,7 @@ View the [TODO](./TODO.en.md) file
 
 | Module Name                                                  | Module Description                                           |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [demo-helloworld](./demo-helloworld)                         | a helloworld demo.                                           |
+| [demo-helloworld](demo-helloworldx)                         | a helloworld demo.                                           |
 | [demo-properties](./demo-properties)                         | a demo to read the contents of configuration file.           |
 | [demo-actuator](./demo-actuator)                             | a demo to integrate spring-boot-starter-actuator for monitoring the starting status and the running status of application. |
 | [demo-admin-client](./demo-admin/admin-client)               | a client demo to  integrate spring-boot-admin for visually monitoring the running status of application, it can be used with spring-boot-starter-actuator. |

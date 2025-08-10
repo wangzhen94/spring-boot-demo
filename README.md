@@ -78,7 +78,7 @@
 
 | Module 名称                                                  | Module 介绍                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [demo-helloworld](./demo-helloworld)                         | spring-boot 的一个 helloworld                                |
+| [demo-helloworld](demo-helloworldx)                         | spring-boot 的一个 helloworld                                |
 | [demo-properties](./demo-properties)                         | spring-boot 读取配置文件中的内容                             |
 | [demo-actuator](./demo-actuator)                             | spring-boot 集成 spring-boot-starter-actuator 用于监控 spring-boot 的启动和运行状态 |
 | [demo-admin-client](./demo-admin/admin-client)               | spring-boot 集成 spring-boot-admin 来可视化的监控 spring-boot 程序的运行状态，可以与 actuator 互相搭配使用，客户端示例 |

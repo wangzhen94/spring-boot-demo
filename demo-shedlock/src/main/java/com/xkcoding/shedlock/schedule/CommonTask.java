@@ -1,10 +1,12 @@
 package com.xkcoding.shedlock.schedule;
 
+import com.xkconding.common.entity.User;
 import lombok.extern.slf4j.Slf4j;
 import net.javacrumbs.shedlock.spring.annotation.EnableSchedulerLock;
 import net.javacrumbs.shedlock.spring.annotation.SchedulerLock;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+
 import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
@@ -29,6 +31,7 @@ public class CommonTask {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+        User user = new User();
     }
 
 

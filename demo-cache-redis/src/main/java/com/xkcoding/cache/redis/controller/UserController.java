@@ -27,39 +27,39 @@ import javax.annotation.Resource;
 @ResponseBody
 public class UserController {
 
-  @Resource
-  private UserService service;
+    @Resource
+    private UserService service;
 
-  @PostMapping()
-  public User saveOrUpdate(
-    @RequestParam(required = false, value = "id") Long id,
-    @RequestParam(value = "name") String name) {
-    User user = new User();
-    user.setId(id);
-    user.setName(name);
-    return service.saveOrUpdate(user);
-  }
+    @PostMapping()
+    public User saveOrUpdate(
+        @RequestParam(required = false, value = "id") Long id,
+        @RequestParam(value = "name") String name) {
+        User user = new User();
+        user.setId(id);
+        user.setName(name);
+        return service.saveOrUpdate(user);
+    }
 
-  /**
-   * 获取用户
-   *
-   * @param id key值
-   * @return 返回结果
-   */
-  @GetMapping(value = "user")
-  public User get(Long id) {
-    return null;
-  }
+    /**
+     * 获取用户
+     *
+     * @param id key值
+     * @return 返回结果
+     */
+    @GetMapping(value = "user")
+    public User get(Long id) {
+        return null;
+    }
 
-  /**
-   * 删除
-   *
-   * @param id key值
-   */
-  @DeleteMapping(value = "user")
-  public void delete(Long id) {
-    return;
-  }
+    /**
+     * 删除
+     *
+     * @param id key值
+     */
+    @DeleteMapping(value = "user")
+    public void delete(Long id) {
+        return;
+    }
 
 
 }

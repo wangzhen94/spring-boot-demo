@@ -36,7 +36,8 @@ public class TestController {
     }
 
     /**
-     *  测试post json方法
+     * 测试post json方法
+     *
      * @param map 请求的json参数
      * @return {@link Dict}
      */
