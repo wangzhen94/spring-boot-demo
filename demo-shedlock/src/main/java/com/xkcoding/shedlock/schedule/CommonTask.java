@@ -8,7 +8,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
-import java.util.concurrent.TimeUnit;
 
 /**
  * Description: TODO
@@ -35,14 +34,14 @@ public class CommonTask {
     }
 
 
-    // @Scheduled(cron = "*/3 * * * * ?")
-    // @SchedulerLock(name = "test", lockAtMostFor = "PT2S", lockAtLeastFor = "PT1S")
-    // public void test() {
-    //     log.info("执行test任务时间: {}", LocalDateTime.now());
-    //     try {
-    //         Thread.sleep(2500);
-    //     } catch (InterruptedException e) {
-    //         throw new RuntimeException(e);
-    //     }
-    // }
+     @Scheduled(cron = "*/3 * * * * ?")
+     @SchedulerLock(name = "test", lockAtMostFor = "PT2S", lockAtLeastFor = "PT1S")
+     public void test() {
+         log.info("执行test任务时间: {}", LocalDateTime.now());
+         try {
+             Thread.sleep(2500);
+         } catch (InterruptedException e) {
+             throw new RuntimeException(e);
+         }
+     }
 }
