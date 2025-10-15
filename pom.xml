@@ -71,7 +71,6 @@
         <module>demo-flyway</module>
         <module>demo-pay</module>
         <module>demo-shedlock</module>
-        <module>demo-helloworldx</module>
     </modules>
     <packaging>pom</packaging>
 

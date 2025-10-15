@@ -33,7 +33,7 @@ public class ScheduleConfig {
     public ThreadPoolTaskScheduler taskScheduler() {
         ThreadPoolTaskScheduler scheduler = new ThreadPoolTaskScheduler();
         scheduler.setPoolSize(5); // 改成5个线程
-        scheduler.setThreadNamePrefix("custom-scheduler-");
+        scheduler.setThreadNamePrefix("custom-sdu-");
         return scheduler;
     }
 }
